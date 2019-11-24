@@ -1,0 +1,14 @@
+{
+  "name": "lhci",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "lhci server --logLevel=silent --port=$PORT --storage.sqlDialect=postgres --storage.sqlConnectionUrl=$DATABASE_URL --storage.sqlDatabasePath=./data/lhci.db --storage.sqlDangerouslyResetDatabase=true --storage.storageMethod=sql"
+  },
+  "dependencies": {
+    "@lhci/cli": "0.3.4",
+    "@lhci/server": "0.3.4",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sqlite3": "^4.0.6"
+  }
+}

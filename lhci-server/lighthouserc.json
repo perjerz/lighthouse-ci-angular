@@ -1,0 +1,14 @@
+{
+  "ci": {
+    "server": {
+      "port": 9001,
+      "storage": {
+        "storageMethod": "sql",
+        "sqlDialect": "postgres",
+        "sqlConnectionUrl": "$DATABASE_URL",
+        "sqlDatabasePath": "/data/lhci.db",
+        "sqlDangerouslyResetDatabase": true
+      }
+    }
+  }
+}
