@@ -4,8 +4,16 @@
       "numberOfRuns": 3,
       "staticDistDir": "./dist/lighthouse-ci-angular"
     },
+    "assert": {
+      "preset": "lighthouse:no-pwa",
+      "assertions": {
+        "offscreen-images": "off",
+        "uses-webp-images": "off"
+      }
+    },
     "upload": {
-      "target": "temporary-public-storage"
+      "target": "lhci",
+      "serverBaseUrl": "http://lhci-angular-server.herokuapp.com"
     }
   }
 }
